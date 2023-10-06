@@ -26,6 +26,7 @@ function sortearComRestricao(nome) {
   }
 }
 
+
 //Função que será executada quando usuário pressionar o botão "adicionar"
 function adicionar() {
     const novoNome = nomeAmigo.value.trim();
@@ -70,15 +71,19 @@ function sortear() {
 
       //desativa o botão adicionar
       btnAdicionar.disabled = true;
+
+      //desativa o campo adicionar nome
+      nomeAmigo.disabled = true;
 }
 
 //função que faz mostrar na tela um de cada vez quem tirou quem
 function mostrar() {
       resposta.innerHTML = "<button onClick='ver()'>Ver</button>"
+      listaPessoas.innerHTML = ''
       if (nomes.length == 0) {
         mostrarSorteio.innerHTML = ''
       }
-      mostrarSorteio.innerHTML = `${nomes[0]} tirou:`
+      mostrarSorteio.innerHTML = `<span>${nomes[0]} TIROU :</span>`
       nomes.shift()
       if (nomesEscolhidosOrdenados.length == 0) {
         resposta.innerHTML = ''
@@ -92,15 +97,20 @@ function esconder() {
 }
 
 function ver() {
-  mostrarSorteio.innerHTML = `${nomesEscolhidosOrdenados[0][1]}`
+  mostrarSorteio.innerHTML = `<span>${nomesEscolhidosOrdenados[0][1]}</span>`
   nomesEscolhidosOrdenados.shift()
   resposta.innerHTML = "<button onClick='esconder()'>Esconder</button>"
   if (nomesEscolhidosOrdenados.length == 0) {
     resposta.innerHTML = ''
   }
   if (nomes.length == 0) {
-    mostrarSorteio.innerHTML += `<h2>Finalizado!!</h2>`
+    resposta.innerHTML = "<button onClick='final()'>Esconder</button>"
   }
+}
+
+function final() {
+  resposta.innerHTML = ''
+  mostrarSorteio.innerHTML = '<span>sorteio Finalizado!</span>'
 }
 
 

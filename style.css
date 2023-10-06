@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+}
+
+.container {
+    width: 500px;
+    height: 700px;
+    border-radius: 25px;
+}
+/* SmartPhone portrait*/
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.formulario label {
+    display: flex;
+    margin-top: 30px;
+}
+
+.formulario input {
+    display: flex;
+    width: 210px;
+    align-items: center;
+    border-radius: 25px;
+    padding: 10px;
+    border: none;
+    background-color: #cccccc;
+}
+
+.formulario button {
+    width: 230px;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 25px;
+    text-transform:uppercase;
+    font-weight: bolder;
+    background-color: #a0a0a0;
+    transition: 0.2s;
+
+}
+
+.formulario button:hover {
+    background-color: #686868;
+    color: white;
+    cursor: pointer;
+}
+
+.listaPessoas {
+    display: flex;
+}
+
+.sortear {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sortear button {
+    align-items: center;
+    display: inline;
+    padding: 12px;
+    width: 100px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    background-color: #a0a0a0;
+    border: none;
+    font-weight: bolder;
+    transition: 0.2s;
+    margin-top: 10px;
+}
+
+
+
+.sortear button:hover {
+    color: white;
+    background-color: #686868;
+    cursor: pointer;
+}
+
+.mostrandoNomes {
+    margin-top: 10px;
+}
+
+.mostrandoNomes li {
+    display: flex;
+    margin-left: 100px;
+    color: rgb(99, 180, 99);
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+
+.resposta button {
+    align-items: center;
+    display: inline;
+    padding: 12px;
+    width: 100px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    background-color: #a0a0a0;
+    border: none;
+    font-weight: bolder;
+    transition: 0.2s;
+    margin-top: 10px;
+}
+
+.resposta button:hover {
+    color: white;
+    background-color: #686868;
+    cursor: pointer;
+}
+
+.resposta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mostrarSorteio {
+    display: flex;
+    
+}
+
+span {
+    margin-left: 210px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+/* SmartPhone landscape*/
+@media (min-width: 576px) {
+    
+}
+
+/* Tablet portrait*/
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        align-items: center;
+    }
+    .container {
+        width: 500px;
+        height: 700px;
+        background-color: rgb(122, 122, 122);
+        border-radius: 25px;
+        color: white;
+    }
+}
+
+/* Tablet landscape*/
+@media (min-width: 992px) {
+
+}
+
+
+/* Desktop*/
+@media (min-width: 1200px) {
+
+}
+
+
+
+
+
+
