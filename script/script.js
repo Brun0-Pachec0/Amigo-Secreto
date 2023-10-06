@@ -99,7 +99,7 @@ function ver() {
     resposta.innerHTML = ''
   }
   if (nomes.length == 0) {
-    mostrarSorteio.innerHTML = `<h2>Finalizado!!</h2>`
+    mostrarSorteio.innerHTML += `<h2>Finalizado!!</h2>`
   }
 }
 
