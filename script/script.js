@@ -16,8 +16,6 @@ function sortearComRestricao(nome) {
   //sortear o indice e o nome do índice
   const indiceSorteado = Math.floor(Math.random() * nomesDisponiveis.length);
   var nomeSorteado = nomesDisponiveis[indiceSorteado];
-  console.log(nomesDisponiveis)
-
   if (nomeSorteado === nome) {
     return sortearComRestricao(nome);
   } else {
@@ -60,7 +58,6 @@ function sortear() {
         nomesEscolhidosOrdenados.push(casalCopia)
         casal.pop()
         casal.pop()
-        console.log(`${nome} sorteou ${nomeSorteado}`);
       }
 
       //remove o botão sortear
@@ -83,7 +80,7 @@ function mostrar() {
       if (nomes.length == 0) {
         mostrarSorteio.innerHTML = ''
       }
-      mostrarSorteio.innerHTML = `<span>${nomes[0]} TIROU :</span>`
+      mostrarSorteio.innerHTML = `<span><h1>${nomes[0]} TIROU :</h1></span>`
       nomes.shift()
       if (nomesEscolhidosOrdenados.length == 0) {
         resposta.innerHTML = ''
@@ -97,7 +94,7 @@ function esconder() {
 }
 
 function ver() {
-  mostrarSorteio.innerHTML = `<span>${nomesEscolhidosOrdenados[0][1]}</span>`
+  mostrarSorteio.innerHTML = `<span><h1>${nomesEscolhidosOrdenados[0][1]}</h1></span>`
   nomesEscolhidosOrdenados.shift()
   resposta.innerHTML = "<button onClick='esconder()'>Esconder</button>"
   if (nomesEscolhidosOrdenados.length == 0) {
@@ -110,7 +107,7 @@ function ver() {
 
 function final() {
   resposta.innerHTML = ''
-  mostrarSorteio.innerHTML = '<span>sorteio Finalizado!</span>'
+  mostrarSorteio.innerHTML = '<span><h1>sorteio Finalizado!</h1></span>'
 }
 
 

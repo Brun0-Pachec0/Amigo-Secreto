@@ -130,15 +130,18 @@ body {
     justify-content: center;
 }
 
-.mostrarSorteio {
-    display: flex;
-    
-}
+
+
 
 span {
-    margin-left: 210px;
+    display: grid;
+
     text-transform: uppercase;
     font-weight: bolder;
+}
+
+span h1 {
+    text-align: center;
 }
 
 
