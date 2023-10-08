@@ -50,28 +50,34 @@ function criarLista() {
 function sortear() {
     criarLista()
 
-    for (const nome of nomes) {
-        const nomeSorteado = sortearComRestricao(nome);
-        casal.push(nome)
-        casal.push(nomeSorteado)
-        casalCopia = [...casal]
-        nomesEscolhidosOrdenados.push(casalCopia)
-        casal.pop()
-        casal.pop()
-      }
+    if (nomes.length < 2) {
+      alert('Adicione ao menos 2 amigos para poder sortear!')
+      btnSortear.disabled = true;
+    } else {
+      btnSortear.disabled = false;
+      for (const nome of nomes) {
+          const nomeSorteado = sortearComRestricao(nome);
+          casal.push(nome)
+          casal.push(nomeSorteado)
+          casalCopia = [...casal]
+          nomesEscolhidosOrdenados.push(casalCopia)
+          casal.pop()
+          casal.pop()
+        }
 
-      //remove o botão sortear
-      btnSortear.remove()
+        //remove o botão sortear
+        btnSortear.remove()
 
-      //cria o botão 'ver' e mostra quem tirou quem na tela
-      resposta.innerHTML = "<button onClick='mostrar()'>Ver</button>"
+        //Ativa a função mostrar()
+        mostrar()
 
-      //desativa o botão adicionar
-      btnAdicionar.disabled = true;
+        //desativa o botão adicionar
+        btnAdicionar.disabled = true;
 
-      //desativa o campo adicionar nome
-      nomeAmigo.disabled = true;
-}
+        //desativa o campo adicionar nome
+        nomeAmigo.disabled = true;
+    }
+    }
 
 //função que faz mostrar na tela um de cada vez quem tirou quem
 function mostrar() {
