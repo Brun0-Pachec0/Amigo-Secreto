@@ -28,14 +28,22 @@ function sortearComRestricao(nome) {
 //Função que será executada quando usuário pressionar o botão "adicionar"
 function adicionar() {
     const novoNome = nomeAmigo.value.trim();
-
-    if (novoNome == '') {
+    //condição se já tiver esse nome na lista
+    if (nomes.includes(novoNome)) {
+      alert('Não é possível adicionar o mesmo nome duas vezes!')
+      nomeAmigo.value = ''
+    } else {
+      if (novoNome == '') {
         alert("Por favor, adicione um nome válido!")
     } else {
         nomes.push(novoNome);
         atualizarListaNomes()
     }
     nomeAmigo.value = ''
+    }
+
+
+
 }
 
 // função para criar a lista secundária antes de sortear

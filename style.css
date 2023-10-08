@@ -17,6 +17,24 @@ body {
     height: 700px;
     border-radius: 25px;
 }
+
+
+footer p {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.regras {
+    margin-top: 25px;
+}
+.regras a {
+    text-decoration: none;
+    color: rgb(72, 72, 197);
+    font-weight: 600;
+    text-align: center;
+    margin-left: 175px;    
+}
+
 /* SmartPhone portrait*/
 .content {
     display: flex;
@@ -145,14 +163,9 @@ span h1 {
 }
 
 
-
-
-
-
-
 /* SmartPhone landscape*/
 @media (min-width: 576px) {
-    
+
 }
 
 /* Tablet portrait*/
@@ -169,6 +182,7 @@ span h1 {
         background-color: rgb(122, 122, 122);
         border-radius: 25px;
         color: white;
+        box-shadow: 3px 3px 10px 0px rgb(29, 29, 29);
     }
 }
 
