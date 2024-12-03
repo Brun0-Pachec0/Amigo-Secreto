@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+.header {
+    background-color: rgb(219, 224, 226);
+    width: 100%;
+    height: 300px;
+}
+
+.informar-nome {
+    text-decoration: blue;
+}
+
+.content {
+    margin-top: 50px;
+}
+
+body {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+.container, footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.btnAdicionar {
+    border-radius: 20px;
+    padding: 10px;
+    width: 120px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#nomeAmigo {
+    margin-top: 20px;
+    width: 150px;
+    margin-right: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+}
+
+.btnSortear {
+    border-radius: 20px;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.regras a {
+    text-decoration: none;
+    color: blue;
+}
+
+
+footer {
+    position: fixed; /* Fixa o footer na tela */
+    left: 0; /* Alinha à esquerda */
+    bottom: 0; /* Alinha ao rodapé da página */
+    width: 100%; /* Garante que o footer ocupe toda a largura da página */
+    background-color: #333; /* Cor de fundo do footer */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno */
+  }

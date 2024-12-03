@@ -4,31 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amigo Secreto</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleteste.css">
     <link rel="icon" href="./icon-body.png">
 </head>
 <body>
     <div class="container">
-        <div class="content">
-            <h1>Amigo Secreto</h1>
-            <div class="formulario">
-                <label for="nomeAmigo">Informe o nome do amigo:</label>
-                <input type="text" name="nomeAmigo" id="nomeAmigo" placeholder="Digite aqui...">
-                <button class="btnAdicionar" onclick="adicionar()">adicionar</button>
+        <div class="header">
+            <div class="content">
+                <h1>Amigo Secreto</h1>
+                <div class="formulario">
+                    <label class="informar-nome" for="nomeAmigo">Informe o nome do amigo:</label>
+                    <br>
+                    <input type="text" name="nomeAmigo" id="nomeAmigo" placeholder="Digite aqui...">
+                    <button class="btnAdicionar" onclick="adicionar()">ADICIONAR</button>
+                </div>
             </div>
-        </div>
-        <div class="content2">
-            <div class="mostrandoNomes">
-                <ul id="listaPessoas"></ul>
-                <ul id="mostrarSorteio"></ul>
+            <div class="content2">
+                <div class="mostrandoNomes">
+                    <ul id="listaPessoas"></ul>
+                    <ul id="mostrarSorteio"></ul>
+                </div>
+                <div class="sortear">
+                    <button class="btnSortear" onclick="sortear()">SORTEAR</button>
+                </div>
+                <div class="resposta"></div>
             </div>
-            <div class="sortear">
-                <button class="btnSortear" onclick="sortear()">Sortear</button>
+            <div class="regras">
+                <a href="./regras.html">Veja as instruções</a>
             </div>
-            <div class="resposta"></div>
-        </div>
-        <div class="regras">
-            <a href="./regras.html">Veja as instruções</a>
         </div>
     </div>
     <footer>
