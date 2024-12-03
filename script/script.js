@@ -89,12 +89,12 @@ function sortear() {
 
 //função que faz mostrar na tela um de cada vez quem tirou quem
 function mostrar() {
-      resposta.innerHTML = "<button onClick='ver()'>Ver</button>"
+      resposta.innerHTML = "<button onClick='ver()'>CLIQUE PARA VER</button>"
       listaPessoas.innerHTML = ''
       if (nomes.length == 0) {
         mostrarSorteio.innerHTML = ''
       }
-      mostrarSorteio.innerHTML = `<span><h1>${nomes[0]} TIROU :</h1></span>`
+      mostrarSorteio.innerHTML = `<span><h1 style="text-transform: uppercase;">${nomes[0]} TIROU</h1></span>`
       nomes.shift()
       if (nomesEscolhidosOrdenados.length == 0) {
         resposta.innerHTML = ''
@@ -104,24 +104,24 @@ function mostrar() {
 //botão para esconder o amigo secreto escolhido
 function esconder() {
   mostrarSorteio.innerHTML = ''
-  resposta.innerHTML = "<button onClick='mostrar()'>Próximo</button>"
+  resposta.innerHTML = "<button onClick='mostrar()'>PRÓXIMO</button>"
 }
 
 function ver() {
-  mostrarSorteio.innerHTML = `<span><h1>${nomesEscolhidosOrdenados[0][1]}</h1></span>`
+  mostrarSorteio.innerHTML = `<span><h1 style="text-transform: uppercase;">${nomesEscolhidosOrdenados[0][1]}</h1></span>`
   nomesEscolhidosOrdenados.shift()
-  resposta.innerHTML = "<button onClick='esconder()'>Esconder</button>"
+  resposta.innerHTML = `<button style="backgroud-color: #464646; color: white;" onClick='esconder()'>ESCONDER</button>`
   if (nomesEscolhidosOrdenados.length == 0) {
     resposta.innerHTML = ''
   }
   if (nomes.length == 0) {
-    resposta.innerHTML = "<button onClick='final()'>Esconder</button>"
+    resposta.innerHTML = "<button onClick='final()'>ESCONDER</button>"
   }
 }
 
 function final() {
   resposta.innerHTML = ''
-  mostrarSorteio.innerHTML = '<span><h1>sorteio Finalizado!</h1></span>'
+  mostrarSorteio.innerHTML = '<span><h1>SORTEIO FINALIZADO!</h1></span>'
 }
 
 

@@ -40,6 +40,7 @@ body {
     background-color: rgb(255, 255, 255);
     font-size: 14px;
     font-weight: 400;
+    margin-bottom: 10px;
 }
 
 #nomeAmigo {
@@ -65,6 +66,43 @@ body {
     color: blue;
 }
 
+.mostrandoNomes li {
+    margin-top: 10px;
+    color: rgb(99, 180, 99);
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+
+.resposta button {
+    align-items: center;
+    display: inline;
+    padding: 12px;
+    width: 150px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    background-color: #ff0000;
+    border: none;
+    font-weight: bolder;
+    transition: 0.2s;
+    margin-top: 10px;
+}
+
+.resposta button:hover {
+    color: white;
+    background-color: #ff0000;
+    cursor: pointer;
+}
+
+.resposta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content2 {
+    margin-top: 20px;
+}
 
 footer {
     position: fixed; /* Fixa o footer na tela */

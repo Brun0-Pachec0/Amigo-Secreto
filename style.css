@@ -129,7 +129,7 @@ footer p {
     width: 100px;
     border-radius: 25px;
     text-transform: uppercase;
-    background-color: #a0a0a0;
+    background-color: #ff0000;
     border: none;
     font-weight: bolder;
     transition: 0.2s;
@@ -138,7 +138,7 @@ footer p {
 
 .resposta button:hover {
     color: white;
-    background-color: #686868;
+    background-color: #ff0000;
     cursor: pointer;
 }
 
